@@ -11,9 +11,9 @@ Link WIZ107SR materials - [WIZ107SR](http://wiznet.co.kr/sub_modules/en/product/
 ## SW - Download & Install  
  * python3.2 - [python3.2version](https://www.python.org/download/releases/3.2/)   
  * pyserial2.7 - [pyserial2.7](https://pypi.python.org/pypi/pyserial)   
- 
+ * ConfigTool for WIZ107SR - [ConfigTool](http://wiznet.co.kr/sub_modules/en/product/product_detail.asp?Refid=706&page=1&cate1=5&cate2=8&cate3=0&pid=1090&cType=2)
 
-## Script descriptions 
+## Script descriptions - TCPClient
  
  * Init. serial port number and baudrate 
 ```c
@@ -55,5 +55,14 @@ Link WIZ107SR materials - [WIZ107SR](http://wiznet.co.kr/sub_modules/en/product/
 	line = ser.read(serial_recv_buf) 
   ... 
 ```
+
+### FAQ; How know the status of TCP connections ?
+  We can know the TCP connection by using 8pin.
+
+	In the initial time, this pin is INPUT for Hardware Trigger(for 
+	serial command mode). After that, this pin is OUTPUT for 
+	connection status. When the connection is established, this pin 
+	goes Low. And, it will go HIGH when connection is closed. 
+
 
 </markdown>
