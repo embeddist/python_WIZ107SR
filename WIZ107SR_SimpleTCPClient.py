@@ -12,7 +12,7 @@ print(msg)
 time.sleep(3)                                  
 
 print ("Change to serial commond mode")
-ser.write(b'123')           # Change to serial command mode/  
+ser.write(b'123')           # Change to serial command mode; when serial command switch code is '123'
                             # just only input serial command mode switch code of 3bytes with '\r\n' 
                             # Serial command mode switch code is set by using ConfigTool. 
 time.sleep(1)    
