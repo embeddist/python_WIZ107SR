@@ -39,7 +39,7 @@ ser.write(b'hello\r\n')
 
 print ("recv data from TCPServer")
 serial_recv_buf =  10
-line = ser.read(serial_recv_buf)         
+msg = ser.read(serial_recv_buf)         
 print(line)
 
 ser.close()
