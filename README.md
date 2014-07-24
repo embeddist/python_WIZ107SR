@@ -31,9 +31,7 @@ Link WIZ107SR materials - [WIZ107SR](http://wiznet.co.kr/sub_modules/en/product/
 
  * Setting TCPClient mode  
 
-  When web-page address is http://192.168.1.177/G0 to on the Green LEN,
-  the received HTTP GET Message is as below,  
-```c
+ ```c
 	ser.write(b'LP5000\r\n')                # Source port number : ex.) 5000
 	ser.write(b'RP3000\r\n')                # TCP server port number : ex.) 3000
 	ser.write(b'RH192.168.10.100\r\n')      # TCP server IP address : ex.) '192.168.10.100'
